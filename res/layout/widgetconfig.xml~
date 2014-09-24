@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/LightYellow"
+        android:gravity="center"
+        android:text="Select Your Division"
+        android:textAlignment="gravity"
+        android:textColor="@color/Black"
+        android:textSize="30sp"
+        android:textStyle="bold|italic" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RadioButton
+            android:id="@+id/radio0"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:checked="true"
+            android:text="SE1"
+            android:textColor="@color/Black"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/radio1"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:text="SE2"
+            android:textColor="@color/Black"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/radio2"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:text="SE3"
+            android:textColor="@color/Black"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/radio3"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:text="SE4"
+            android:textColor="@color/Black"
+            android:textSize="20sp" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/button1"
+        style="@style/button_text"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:background="@drawable/red_button"
+        android:text="Submit"
+        android:textSize="20sp" />
+
+</LinearLayout>

@@ -5,64 +5,82 @@
     android:orientation="vertical" >
 
     <TextView
-        android:id="@+id/textView1"
+        android:id="@+id/tv_sel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:text="Select Division"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#00008B"
+        android:textSize="45sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_sel"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:background="@color/LightYellow"
-        android:gravity="center"
-        android:text="Select Your Division"
-        android:textAlignment="gravity"
-        android:textColor="@color/Black"
-        android:textSize="30sp"
-        android:textStyle="bold|italic" />
+        android:layout_height="1dp"
+        android:layout_margin="5dp"
+        android:layout_marginTop="5dp"
+        android:background="#00008B"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textStyle="bold" />
 
-    <RadioGroup
-        android:id="@+id/radioGroup1"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical" >
 
-        <RadioButton
-            android:id="@+id/radio0"
+        <RadioGroup
+            android:id="@+id/radioGroup1"
             android:layout_width="match_parent"
-            android:layout_height="35dp"
-            android:checked="true"
-            android:text="SE1"
-            android:textColor="@color/Black"
-            android:textSize="20sp" />
+            android:layout_height="wrap_content" >
 
-        <RadioButton
-            android:id="@+id/radio1"
-            android:layout_width="match_parent"
-            android:layout_height="35dp"
-            android:text="SE2"
-            android:textColor="@color/Black"
-            android:textSize="20sp" />
+            <RadioButton
+                android:id="@+id/radio0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:checked="true"
+                android:text="TE1"
+                android:textSize="20sp" />
 
-        <RadioButton
-            android:id="@+id/radio2"
-            android:layout_width="match_parent"
-            android:layout_height="35dp"
-            android:text="SE3"
-            android:textColor="@color/Black"
-            android:textSize="20sp" />
+            <RadioButton
+                android:id="@+id/radio1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="TE2"
+                android:textSize="20sp" />
 
-        <RadioButton
-            android:id="@+id/radio3"
-            android:layout_width="match_parent"
-            android:layout_height="35dp"
-            android:text="SE4"
-            android:textColor="@color/Black"
-            android:textSize="20sp" />
-    </RadioGroup>
+            <RadioButton
+                android:id="@+id/radio2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="TE3"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/radio3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="TE4"
+                android:textSize="20sp" />
+        </RadioGroup>
+    </LinearLayout>
 
     <Button
-        android:id="@+id/button1"
+        android:id="@+id/bt_select"
         style="@style/button_text"
-        android:layout_width="100dp"
-        android:layout_height="50dp"
-        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
         android:background="@drawable/red_button"
-        android:text="Submit"
-        android:textSize="20sp" />
+        android:text="Submit" />
 
 </LinearLayout>
